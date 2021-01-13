@@ -32,6 +32,10 @@ export default Vue.extend({
     }
   },
   async beforeMount() {
+    if (this.getHomeSectionContent(this.section)) {
+      this.loading = false;
+    }
+
     switch (this.section.type) {
       case 'libraries': {
         await this.getLibraries();
@@ -61,7 +65,7 @@ export default Vue.extend({
         break;
     }
 
-    this.$data.loading = false;
+    this.loading = false;
   },
   methods: {
     ...mapActions('homeSection', {
