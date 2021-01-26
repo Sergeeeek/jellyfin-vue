@@ -258,6 +258,7 @@
       "deleteAllDevicesError": "Error deleting all devices",
       "noDevicesFound": "No devices found",
       "delete": "Delete",
+      "deviceName": "Device name",
       "appName": "App name",
       "appVersion": "App version",
       "lastActive": "Last active",
